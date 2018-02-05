@@ -41,8 +41,8 @@ let service = {
     },
     toLoginPage() {
         Cookie.setCookie('url', window.location.href)
-        //window.location = "http://pass.muxixyz.com?landing=blog.muxixyz.com/landing"
-        window.location = "http://pass.muxixyz.com?landing=localhost:3000/landing"
+        window.location = "http://pass.muxixyz.com?landing=book.muxixyz.com/landing"
+        //window.location = "http://pass.muxixyz.com?landing=localhost:3000/landing"
     }
 
 }
