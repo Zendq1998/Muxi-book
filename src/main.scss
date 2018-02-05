@@ -1,0 +1,174 @@
+@import "./utility.scss";
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Adobe 黑体 Std";
+}
+
+a {
+    text-decoration: none;
+    color: #2b4755;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+button {
+    outline: 0;
+    border: 0;
+}
+$Borrowboxwidth:300px;
+$Borrowboxheigt:320px;
+$Submitbottomw:100px;
+$Submitbottomh:45px;
+.box{
+    width: $Borrowboxwidth;
+    height: $Borrowboxheigt;
+    top: 47%;
+    left: 50%;
+    margin-left: - ($Borrowboxwidth)/2;
+    margin-top: - ($Borrowboxheigt)/2;
+    position: fixed;
+    background: #ffffff;
+    border-radius: 0.5vw;
+    box-shadow: 1px 2px 5px #888888;
+    color: #686868;
+    font-size: 20px;
+}
+.box-title{
+    position: relative;
+    text-align: center;
+    top: 30px;
+}
+// 弹出的盒子框框
+.box-close{
+    width: $Borrowboxwidth/10;
+    height: $Borrowboxwidth/10;
+    position: absolute;
+    right: $Borrowboxwidth/40;
+    top: $Borrowboxwidth/80;
+    background: url(./pictures/icon/close.png) no-repeat center;
+    cursor: pointer;
+}
+.box-close:hover{
+    top: $Borrowboxwidth/100;
+}
+.reader-submit-bt{
+    position: absolute;
+    width: $Submitbottomw;
+    height: $Submitbottomh;
+    bottom:  $Borrowboxheigt/20;
+    left: 50%;
+    margin-left: - $Submitbottomw/2;
+    background-color: #e16a6e;
+    border-radius: 8px;
+    color: #ffffff;
+    text-align: center;
+    line-height: $Submitbottomh;
+}
+.reader-submit-bt :hover{
+    background-color: #a85255;
+}
+// 点击的按钮
+.component-fade-enter-active, .component-fade-leave-active {
+    transition: opacity .3s ease;
+  }
+.component-fade-enter, .component-fade-leave-to
+  /* .component-fade-leave-active for below version 2.1.8 */ {
+    opacity: 0;
+}
+// 弹出时的过度效果
+.item{
+    margin: 0px auto;
+    margin-bottom: 5vh;
+    width: 93%;
+    height: 18vh;
+    box-shadow: 1px 1px 1px 1px #d6d6d6;
+    border-radius: 0.5vh;
+    vertical-align: middle;
+    position: relative;
+    font-family: 'Adobe 黑体 Std', Arial, sans-serif;
+}
+// 
+.item-info{
+    width: 92%;
+    height: 12vh;
+    position: absolute;
+    top: 50%;
+    margin-top: -6vh;
+    left: 4%;
+    line-height: 12vh;
+    color: #686868;
+    font-size: 2vw;
+}
+.item-info > span{
+    position: absolute;
+}
+.info-no{
+    left: 0%;
+}
+.info-book{
+    font-weight: 50;
+    color: #191919;
+    left: 10%;
+    width: 28%;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.arrowr{
+    width: 2px;
+    height: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-top: 20px solid #fff;
+    border-left: 34.6px solid #e16a6e;
+    border-bottom: 20px solid #fff;
+    border-right: #fff;
+}
+.arrowr:hover{
+    border-left:34.6px solid #a85255;
+}
+.arrowl{
+    width: 2px;
+    height: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-top: 20px solid #fff;
+    border-right: 34.6px solid #e16a6e;
+    border-bottom: 20px solid #fff;
+    border-left: #fff;
+}
+.arrowl:hover{
+    border-right: 34.6px solid #a85255;
+}
+$InfoBorrowBtW: 9vw;
+$InfoBorrowBtH: 4vw;
+.info-bt{
+    position: absolute;
+    width: $InfoBorrowBtW;
+    height: $InfoBorrowBtH;
+    right: 3vw;
+    top: 50%;
+    margin-top: - $InfoBorrowBtH/2;
+    background-color: #e16a6e;
+    border-radius: 0.4vw;
+    color: #ffffff;
+    text-align: center;
+    line-height: $InfoBorrowBtH;
+}
+.info-bt:hover{
+    background-color: #a85255;
+}
+$MainstyleColor : #e16a6e;
+$HoverstyleColor:#a85255;
+
+.main-style{
+    background-color: $MainstyleColor;
+}
+.main-style:hover{
+    background-color: $HoverstyleColor;
+}
+

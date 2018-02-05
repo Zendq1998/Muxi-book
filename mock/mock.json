@@ -1,0 +1,33 @@
+{
+	"routes": [
+		{
+			"name" : "index",
+			"endpoint": "/",
+			"template": "index",
+			"async": false
+		},
+		{
+			"name" : "mybook",
+			"endpoint": "/mybook",
+			"template": "mybook",
+			"async": false
+		},
+		{
+			"name" : "login",
+			"endpoint": "/login",
+			"template": "login",
+			"async": false
+		},
+		{
+			"name" : "landing",
+			"endpoint": "/landing",
+			"template": "landing",
+			"async": false
+		}
+		
+	],
+
+	"data":{
+		
+	}
+}
