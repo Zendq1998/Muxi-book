@@ -18,11 +18,6 @@
                 <img src="../pictures/icon/personal-center.png" class="person-logo">
             </div>
         </div>
-        <div class="sign">
-        <!-- <button class="signup_box full_width full_height">
-	        <div v-on:click="login" class="signup full_width full_height">登录/注册</div>
-	    </button> -->
-	</div>
     </div>
 </template>
 
@@ -112,18 +107,5 @@ $PersonHeight: 6.3vh;
     position: absolute;
     right: 0;
 	top: 0;
-}
-.signup {
-	line-height: 20px;
-}
-.signup_box,.sign {
-	border-radius: 4px;
-}
-.signup_box:hover {
-	background-color: #e16a6e;
-	cursor: pointer;
-	.signup { 
-		color: #ffffff;
-	}
 }
 </style>

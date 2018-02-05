@@ -16,7 +16,15 @@ router.get('/', function(ctx, next){
         ctx.body = template({})
 });
 
-router.get('/windows', function(ctx, next){
+router.get('/mybook', function(ctx, next){
+    let template = swig.compileFile(path.resolve(templateRoot, "index.html"));
+    ctx.body = template({})
+});
+router.get('/login', function(ctx, next){
+    let template = swig.compileFile(path.resolve(templateRoot, "index.html"));
+    ctx.body = template({})
+});
+router.get('/landing', function(ctx, next){
     let template = swig.compileFile(path.resolve(templateRoot, "index.html"));
     ctx.body = template({})
 });
